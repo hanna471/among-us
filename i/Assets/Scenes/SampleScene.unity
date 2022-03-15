@@ -1324,7 +1324,7 @@ GameObject:
   - component: {fileID: 410379115}
   m_Layer: 0
   m_Name: playerRed
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3477,7 +3477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &943788408
 Transform:
   m_ObjectHideFlags: 0
@@ -3486,7 +3486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943788407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 32, z: 0}
+  m_LocalPosition: {x: 0, y: 32.03, z: -1.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2002053463}
@@ -4347,7 +4347,7 @@ GameObject:
   - component: {fileID: 1056771302}
   m_Layer: 0
   m_Name: playerBrown
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4954,7 +4954,7 @@ GameObject:
   - component: {fileID: 1192633040}
   m_Layer: 0
   m_Name: playerYellow
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5610,6 +5610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcae5bb045bc7d449d5366b62ff1018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   task: {fileID: 943788407}
   playerCamera: {fileID: 102636612286533601}
   taskCamera: {fileID: 1246240566}

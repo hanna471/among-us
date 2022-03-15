@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class taskstart : MonoBehaviour
 {
+    public GameObject player;
     public GameObject task;
     public Camera playerCamera;
     public Camera taskCamera;
@@ -12,9 +13,8 @@ public class taskstart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -49,6 +49,7 @@ public class taskstart : MonoBehaviour
         playerCamera.enabled = false;
         taskCamera.enabled = true;
         Cursor.lockState = CursorLockMode.None;
-    }
-   
+        player.SetActive(false);
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+   }
 }
