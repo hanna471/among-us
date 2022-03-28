@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class taskdone : MonoBehaviour
 {
+    public taskstart startscr;
     public int targetscore;
     public int wireScore;
     // Start is called before the first frame update
     void Start()
     {
-
+      //  startscr = gameObject.GetComponent<taskstart>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,6 @@ public class taskdone : MonoBehaviour
     }
     public void finishTask()
     {
-        Debug.Log("done");
+        startscr.endTask();
     }
 }

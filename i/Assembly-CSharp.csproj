@@ -72,6 +72,7 @@
     <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\TypeExtensions.cs" />
     <Compile Include="Assets\scipt\textscr.cs" />
     <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackFormatter.cs" />
+    <Compile Include="Assets\scipt\taskstart.cs" />
     <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\EnumExtensions.cs" />
     <Compile Include="Assets\UniGLTF\DepthFirstScheduler\TaskChain.cs" />
     <Compile Include="Assets\UniGLTF\DepthFirstScheduler\IEnumeratorExtensions.cs" />
@@ -232,7 +233,6 @@
     <Compile Include="Assets\UniGLTF\UniHumanoid\PoseModifier\IPoseModifier.cs" />
     <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonArrayValidator.cs" />
     <Compile Include="Assets\scipt\taskdone.cs" />
-    <Compile Include="Assets\scipt\taskstart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

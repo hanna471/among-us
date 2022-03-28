@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class taskstart : MonoBehaviour
 {
+    public bool taskComplete;
     public GameObject player;
     public GameObject task;
     public Camera playerCamera;
@@ -18,9 +19,10 @@ public class taskstart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerHere == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerHere == true && taskComplete == false)
         {
             startTask();
+
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -52,4 +54,14 @@ public class taskstart : MonoBehaviour
         player.SetActive(false);
         gameObject.GetComponent<BoxCollider>().enabled = false;
    }
+    public void endTask()
+    {
+        task.SetActive(false);
+        playerCamera.enabled = true;
+        taskCamera.enabled = false; ;
+        Cursor.lockState = CursorLockMode.Locked;
+        player.SetActive(true);
+        gameObject.GetComponent<BoxCollider>().enabled = true;
+        taskComplete = true;
+    }
 }
